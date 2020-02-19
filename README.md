@@ -4,16 +4,16 @@ This docker contains a pre-built version of [MultiMLton](http://multimlton.cs.pu
 
 Getting started
 -------------------
-1. Clone this repository.
-2. Build the docker:
+Just type this and you're good to go:
 ````
-docker build -t multimlton-docker .
+docker run -v "$PWD":"$PWD" -w "$PWD" emptystackexn/multimlton mlton
 ````
-3. You can run the docker:
+
+
+For nerds
+-------------------
+### Build the docker from scratch
 ````
-docker run -it multimlton-docker
+docker build -t emptystackexn/multimlton .
 ````
-4. ... or directly MultiMLton:
-````
-docker run multimlton-docker mlton
-````
+
