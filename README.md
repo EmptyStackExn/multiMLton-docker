@@ -17,3 +17,7 @@ For nerds
 docker build -t emptystackexn/multimlton .
 ````
 
+### ...or load the presaved docker image (as of commit #e794b6e84245)
+````
+docker load -i build/multiMLton-docker.tar.gz
+````
